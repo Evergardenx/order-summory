@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #e0e8ff;
+    background-position: top;
+  }
+  
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .container .card {
+    width: 88%;
+    max-width: 450px;
+    margin-top: 7rem;
+    background-color: white;
+    border-radius: 2rem;
+    -webkit-box-shadow: 10px 10px 20px rgba(56, 41, 224, 0.1), 15px 15px 30px rgba(56, 41, 224, 0.1);
+            box-shadow: 10px 10px 20px rgba(56, 41, 224, 0.1), 15px 15px 30px rgba(56, 41, 224, 0.1);
+  }
+  
+  .container .card .hero {
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+  
+  .container .card .card-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 3rem;
+  }
+  
+  .container .card .card-wrapper .title {
+    font-size: 2.2rem;
+    font-weight: 900;
+  }
+  
+  .container .card .card-wrapper .description {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #7280a7;
+    padding: 1.6rem 1rem;
+    line-height: 2.4rem;
+    text-align: center;
+  }
+  
+  .container .card .card-wrapper .plan-card {
+    background-color: #f5f7ff;
+    width: 100%;
+    border-radius: 1.5rem;
+    margin: 0.8rem 0;
+    padding: 1.6rem 1.2rem;
+  }
+  
+  .container .card .card-wrapper .plan-card .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .container .card .card-wrapper .plan-card .payment-plan {
+    color: #1f2f56;
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+  }
+  
+  .container .card .card-wrapper .plan-card .price {
+    color: #7280a7;
+    font-size: 1.4rem;
+    font-weight: 700;
+    opacity: 0.5;
+  }
+  
+  .container .card .card-wrapper .plan-card a {
+    color: #3829e0;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  
+  .container .card .card-wrapper .plan-card a:hover {
+    text-decoration: none;
+    opacity: 0.75;
+  }
+  
+  .container .card .card-wrapper .btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .container .card .card-wrapper .primary {
+    background-color: #3829e0;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 20px rgba(56, 41, 224, 0.15), 15px 15px 30px rgba(56, 41, 224, 0.15);
+            box-shadow: 10px 10px 20px rgba(56, 41, 224, 0.15), 15px 15px 30px rgba(56, 41, 224, 0.15);
+  }
+  
+  .container .card .card-wrapper .primary:hover {
+    opacity: 0.7;
+  }
+  
+  .container .card .card-wrapper .primary a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .container .card .card-wrapper .secondary {
+    padding: 0.8rem;
+  }
+  
+  .container .card .card-wrapper .secondary a {
+    color: #7280a7;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .container .card .card-wrapper .secondary a:hover {
+    color: #1f2f56;
+  }
+  
+  @media screen and (min-width: 1440px) {
+    body {
+      background-image: url("../images/pattern-background-desktop.svg");
+    }
+    .container {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+    .container .card {
+      margin-top: unset;
+    }
+    .container .card .card-wrapper {
+      padding: 4rem 4.5rem;
+    }
+    .container .card .card-wrapper .title {
+      font-size: 2.8rem;
+    }
+    .container .card .card-wrapper .description {
+      font-size: 1.6rem;
+      line-height: 2.55rem;
+    }
+    .container .card .card-wrapper .plan-card {
+      padding: 2.2rem 2.4rem;
+      margin: 0.4rem;
+    }
+    .container .card .card-wrapper .plan-card .list {
+      gap: 2.2rem;
+    }
+    .container .card .card-wrapper .plan-card .list .payment-plan {
+      font-size: 1.6rem;
+    }
+    .container .card .card-wrapper .plan-card .list .price {
+      font-size: 1.6rem;
+    }
+    .container .card .card-wrapper .plan-card .list a {
+      font-size: 1.5rem;
+    }
+    .container .card .card-wrapper .primary {
+      margin: 3rem 0 2.4rem 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  
